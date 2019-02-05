@@ -29,7 +29,13 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    // Filter out the footer
+    const posts = result.data.allMarkdownRemark.edges.filter(edge => {
+      if (edge.node.frontmatter.templateKey === "footer") {
+        return false;
+      }
+      return true;
+    });
 
     posts.forEach(edge => {
       const id = edge.node.id

@@ -1,23 +1,42 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+import Navbar from '../Navbar'
+import Footer from "../Footer";
 
-import Navbar from '../components/Navbar'
-import './all.sass'
+import '../all.sass'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
-          site {
-            siteMetadata {
-              title,
-              description,
+        site {
+          siteMetadata {
+            title,
+            description,
+          }
+        }
+        footerData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "footer" } } }) {
+          edges {
+            node {
+              id
+              frontmatter {
+                siteLogo {
+                  childImageSharp {
+                    fluid(maxWidth: 526, quality: 92) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
             }
           }
         }
+      }
     `}
-    render={data => (
+    render={data => {
+      console.log(JSON.stringify(data));
+      return (
       <div>
         <Helmet>
           <html lang="en" />
@@ -37,9 +56,10 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
-        <div>{children}</div>
+        <main>{children}</main>
+        <Footer data={data.footerData} />
       </div>
-    )}
+    )}}
   />
 )
 
