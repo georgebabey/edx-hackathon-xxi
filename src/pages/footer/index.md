@@ -6,10 +6,10 @@ links_1:
   links:
     - text: About
       url: 'https://www.edx.org'
-    - text: Careers
-      url: 'https://www.edx.org/careers'
     - text: News
       url: 'https://www.edx.org/news'
+    - text: Careers
+      url: 'https://www.edx.org/careers'
 links_2:
   header: Legal
   links:
