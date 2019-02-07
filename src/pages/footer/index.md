@@ -10,6 +10,8 @@ links_1:
       url: 'https://www.edx.org/news'
     - text: Careers
       url: 'https://www.edx.org/careers'
+    - text: TOS
+      url: 'https://edx.org/tos'
 links_2:
   header: Legal
   links:
