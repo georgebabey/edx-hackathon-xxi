@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Navbar from '../Navbar'
 import Footer from "../Footer";
 
-import '../all.sass'
+import './styles.scss'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -23,9 +23,27 @@ const TemplateWrapper = ({ children }) => (
               frontmatter {
                 siteLogo {
                   childImageSharp {
-                    fluid(maxWidth: 526, quality: 92) {
-                      ...GatsbyImageSharpFluid
+                    fixed(width: 105, height: 47, quality: 92) {
+                      ...GatsbyImageSharpFixed
                     }
+                  }
+                }
+                links_1 {
+                  header,
+                  links {
+                    text, url
+                  }
+                }
+                links_2 {
+                  header,
+                  links {
+                    text, url
+                  }
+                }
+                links_3 {
+                  header,
+                  links {
+                    text, url
                   }
                 }
               }
@@ -35,7 +53,6 @@ const TemplateWrapper = ({ children }) => (
       }
     `}
     render={data => {
-      console.log(JSON.stringify(data));
       return (
       <div>
         <Helmet>
@@ -57,7 +74,7 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <main>{children}</main>
-        <Footer data={data.footerData} />
+        <Footer siteName={data.site.siteMetadata.title} data={data.footerData.edges[0].node.frontmatter} />
       </div>
     )}}
   />

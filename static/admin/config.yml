@@ -44,8 +44,8 @@ collections:
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
 
-  - name: "footer"
-    label: "Footer"
+  - name: "site_config"
+    label: "Site Config"
     files:
       - file: "src/pages/footer/index.md"
         label: "Footer"
@@ -53,3 +53,42 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "footer" }
           - { label: Logo, name: siteLogo, widget: image }
+          - label: "Column 1"
+            name: links_1
+            widget: object
+            fields:
+              - label: "Column 1 Header"
+                name: header
+                widget: string
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Display Text", name: text, widget: string }
+                  - { label: URL, name: url, widget: string }
+          - label: "Column 2"
+            name: links_2
+            widget: object
+            fields:
+              - label: "Column 2 Header"
+                name: header
+                widget: string
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Display Text", name: text, widget: string }
+                  - { label: URL, name: url, widget: string }
+          - label: "Column 3"
+            name: links_3
+            widget: object
+            fields:
+              - label: "Column 3 Header"
+                name: header
+                widget: string
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - { label: "Display Text", name: text, widget: string }
+                  - { label: URL, name: url, widget: string }
