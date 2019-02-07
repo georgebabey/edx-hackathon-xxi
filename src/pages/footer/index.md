@@ -21,6 +21,8 @@ links_2:
       url: 'https://www.edx.org/privacy'
     - text: Accessibility Policy
       url: 'https://www.edx.org/accessibility'
+    - text: Certificates
+      url: 'https://www.edx.org/certs'
 links_3:
   header: Connect
   links:
