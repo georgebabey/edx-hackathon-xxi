@@ -8,7 +8,7 @@ links_1:
       url: 'https://www.edx.org'
     - text: Carees
       url: 'https://www.edx.org/careers'
-    - text: 'https://www.edx.org/newses'
+    - text: News
       url: 'https://www.edx.org/news'
 links_2:
   header: Legal
