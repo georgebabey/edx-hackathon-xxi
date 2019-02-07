@@ -30,5 +30,7 @@ links_3:
       url: 'https://www.edx.org/support'
     - text: Help Center
       url: 'https://help.edx.org'
+    - text: Test
+      url: test
 ---
 
