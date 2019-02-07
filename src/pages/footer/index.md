@@ -6,7 +6,7 @@ links_1:
   links:
     - text: About
       url: 'https://www.edx.org'
-    - text: Carees
+    - text: Careers
       url: 'https://www.edx.org/careers'
     - text: News
       url: 'https://www.edx.org/news'
