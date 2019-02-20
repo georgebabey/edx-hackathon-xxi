@@ -2,15 +2,15 @@
 templateKey: footer
 siteLogo: /img/logo-footer.fde85fe42f6b.png
 links_1:
-  header: edX
+  header: Our company
   links:
-    - text: Jobs
-      url: 'https://www.edx.org/careers'
     - text: Latest News
       url: 'https://www.edx.org/news'
+    - text: Jobs
+      url: 'https://www.edx.org/careers'
     - text: About Us
       url: 'https://www.edx.org'
-    - text: TOS
+    - text: Terms
       url: 'https://edx.org/tos'
 links_2:
   header: Legal
