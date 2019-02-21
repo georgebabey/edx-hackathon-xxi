@@ -5,7 +5,7 @@ links_1:
   header: Our company
   links:
     - text: Latest News
-      url: 'https://www.edx.org/news'
+      url: 'https://www.company1.org/news'
     - text: Jobs
       url: 'https://www.edx.org/careers'
     - text: About Us
