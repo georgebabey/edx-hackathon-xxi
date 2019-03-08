@@ -4,14 +4,12 @@ siteLogo: /img/logo-footer.fde85fe42f6b.png
 links_1:
   header: Our company
   links:
-    - text: Employment
-      url: 'https://www.company1.org/careers'
     - text: News
       url: 'https://www.edx.org/news'
+    - text: Careers
+      url: 'https://www.company1.org/careers'
     - text: About Us
       url: 'https://www.edx.org'
-    - text: Terms
-      url: 'https://edx.org/tos'
 links_2:
   header: Legal
   links:
