@@ -4,7 +4,7 @@ siteLogo: /img/logo-footer.fde85fe42f6b.png
 links_1:
   header: Our company
   links:
-    - text: Jobs
+    - text: Careers
       url: 'https://www.edx.org/careers'
     - text: Latest News
       url: 'https://www.company1.org/news'
