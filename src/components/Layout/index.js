@@ -72,8 +72,8 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
-        <main>{children}</main>
+        {/* <Navbar /> */}
+        {/* <main>{children}</main> */}
         <Footer siteName={data.site.siteMetadata.title} data={data.footerData.edges[0].node.frontmatter} />
       </div>
     )}}
